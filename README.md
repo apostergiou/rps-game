@@ -5,7 +5,17 @@ threads and a TCP server.
 
 ## How to play
 
-TODO
+Start the server:
+
+```shell
+$ ruby server.rb
+```
+
+Play:
+
+```shell
+$ telnet localhost 3939
+```
 
 ## Resources
 
