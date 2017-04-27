@@ -1,14 +1,15 @@
 module Games
   class RPS
     include Comparable
-    attr_accessor :move
+    attr_accessor :move, :name
 
     WINS = [%w[rock scissors],
             %w[scissors paper],
             %w[paper rock]].freeze
 
-    def initialize(move)
+    def initialize(move, name)
       @move = move.to_s
+      @name = name
     end
 
     def <=>(other)
